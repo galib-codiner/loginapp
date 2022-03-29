@@ -16,7 +16,7 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/http://18.233.93.179/#/");
+      window.open('http://18.233.93.179/#/', '_self');
     } catch (err) {
       setError(err.message);
     }
